@@ -1,0 +1,173 @@
+@charset 'utf8';
+
+/* 共通　------------------------------------- */
+
+html,body{
+	margin: 0;
+	padding: 0;
+}
+
+
+/* ¥共通　------------------------------------- */
+
+.wrapper{
+	width: 100%;
+	height: 100%;
+	background: #ddd;
+}
+/*サイドバー---------------------------------------------*/
+.sidebar{
+    width: 20%;
+    height: 100%;
+    background: #69697a;
+    display: inline-block;
+    position: fixed;
+}
+.sidebar .channel{
+		font-size:30px;
+		color:#fff;
+		padding:0px 0px 0px 10px;
+}
+.sidebar .channelList{
+		line-height:25px;
+		padding:0px 0px 0px 20px;
+		font-size:16px;
+}
+/*オプション用ボックス---------------------------------------------*/
+.rightBox{
+	  position: fixed;
+    right: 0;
+    z-index: 100;
+    background: #555;
+    height: 100%;
+    width: 20%;
+}
+.rightBox .innerRightBox {
+    margin-top: 65px;
+    margin-left: 10px;
+}
+.rightBox .innerRightBox .closeRightBox{
+		text-align:right;
+		display:block;
+		margin:10px;
+}
+.rightBox .innerRightBox .others{
+		font-size:32px;
+    margin-left: 5px;
+}
+.rightBox .innerRightBox .toolForm{
+	margin:5px;
+	padding:5px;
+}
+
+.rightBox .innerRightBox .toolsList{
+	list-style:none;
+}
+.rightBox .innerRightBox .toolsList .toolsName{
+	font-size:24px;
+	line-height:1.5em;
+	margin:10px;
+}
+
+/*メインボックス---------------------------------------------*/
+.contentsBox{
+    width: 80%;
+    height: 100%;
+    background: #eee;
+    display: inline-block;
+    float: right;
+}
+.contentsBox .headerBox {
+    background: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    height: 65px;
+}
+
+
+.contentsBox .headerBox .channelName {
+		font-size:24px;
+		font-weight: bold;
+		padding:0px 0px 0px 20px;
+		display:inline-block;
+}
+.contentsBox .headerBox .channelPurpose {
+		font-size:16px;
+		padding:0px 0px 5px 20px;
+		font-style:oblique; 
+		display:inline-block;
+}
+.contentsBox .headerBox .optionMenu {
+		font-size:16px;
+		position: fixed;
+    right: 2%;
+    top: 2%;
+		display:inline-block;
+		
+}
+.contentsBox .headerBox .optionMenu .options {
+		background: #CA3;
+    width: 100px;
+		text-align:center;
+		list-style:none;
+}
+#nav:hover > ul {
+	display: inline-block;
+	background: #AC3;
+  	width: 100px;
+	list-style:none;
+	text-align:left;
+}
+.contentsBox .headerBox .optionMenu  .optionList{
+		display:none;
+}
+.contentsBox .contents {
+    padding: 65px 0px 140px 0px;
+}
+.contentsBox .contents .messageBox{
+		padding:10px 10px 10px 10px;
+		position:relative;
+}
+.contentsBox .contents .messageBox:nth-child(2n){
+	background: #ccc;
+}
+.contentsBox .contents .messageBox .userName{
+		line-height:20px;
+		font-size:18px;
+		display: inline-block;
+}
+.contentsBox .contents .messageBox .messageText{
+		font-size:12px;
+		line-height:1.5em;
+}
+.contentsBox .contents .messageBox .messageInnerBox{
+		width:80%;
+		display: inline-block;
+}
+.messageTextBox{
+	width: 80%;
+	height:100px;
+}
+.contentsBox .sendBox{
+    width: 60%;
+		padding:10px 0px 10px 30px;
+    position: fixed;
+    bottom: 0;
+    background: #fff;
+}
+.deleteform{
+		display:inline-block;
+		position:absolute;
+		top:0;
+		right:0;
+		
+}
+.deletebutton{
+		width :	50px;
+		height : 20px;
+		color:#fff;
+		background-color:#daa520;
+		border:none;
+}

@@ -1,0 +1,15 @@
+<script type=“text/javascript”>
+function sampleForm( value ){
+    var form = document.createElement( ‘form’ );
+    document.body.appendChild( form );
+    var input = document.createElement( ‘input’ );
+    input.setAttribute( ‘type’ , ‘hidden’ );
+    input.setAttribute( ‘name’ , ‘name’ );
+    input.setAttribute( ‘value’ , value );
+    form.appendChild( input );
+    form.setAttribute( ‘action’ , ‘送信したいファイル’ );
+    form.setAttribute( ‘method’ , ‘post or get’ );
+    form.submit();
+}
+</script>
+<a href=“javascript:sampleForm('値')”>クリックしたら“値”をPOST送信</a>
